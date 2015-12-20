@@ -17,8 +17,6 @@ import android.widget.RelativeLayout;
 import java.lang.Override;
 @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
 
-
-
 public class MainActivity extends AppCompatActivity {
 
     private RelativeLayout myLayout;
