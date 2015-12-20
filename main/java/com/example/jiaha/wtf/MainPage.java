@@ -20,51 +20,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-/*
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.Context;
-import android.content.DialogInterface;
-import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemSelectedListener;
-import android.widget.BaseAdapter;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.Context;
-import android.content.DialogInterface;
-import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemSelectedListener;
-import android.widget.BaseAdapter;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;*/
 
 public class MainPage extends ListActivity {
 
@@ -127,14 +82,14 @@ public class MainPage extends ListActivity {
             }
         });
     }
-    // ListView 中某项被选中后的逻辑
+    // ListView 涓煇椤硅閫変腑鍚庣殑閫昏緫
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
         Log.v("clicked", (String) mData.get(position).get("title"));
     }
 
     /**
-     * listview中点击按键弹出对话框
+     * listview涓偣鍑绘寜閿脊鍑哄璇濇
      */
     public void showInfo(){
         new AlertDialog.Builder(this)
@@ -208,7 +163,7 @@ public class MainPage extends ListActivity {
             holder.img.setBackgroundResource((Integer) mData.get(position).get("img"));
             holder.img1.setBackgroundResource((Integer) mData.get(position).get("pic"));
             holder.title.setText((String) mData.get(position).get("title"));
-            holder.info.setText((String) mData.get(position).get("info")+"个月");
+            holder.info.setText((String) mData.get(position).get("info")+"涓湀");
             holder.viewBtn.setOnClickListener(new View.OnClickListener() {
 
                 @Override
