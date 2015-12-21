@@ -1,17 +1,81 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingLeft = "@dimen/activity_horizontal_margin"
-        android:paddingRight = "@dimen/activity_horizontal_margin"
-        android:paddingTop = "@dimen/activity_vertical_margin"
-        android:paddingBottom = "@dimen/activity_vertical_margin"
-        android:id = "@+id/my_layout"
-        tools:context="com.example.hsienyu.halogreen.MainActivity">
-    <TextView
-        android:text = "Hello World!"
-        android:layout_width = "wrap_content"
-        android:layout_height = "wrap_content"/>
-</android.support.design.widget.CoordinatorLayout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:id="@+id/my_layout">
+
+     <TextView android:id="@+id/create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/onCreate"
+         android:layout_centerVertical="true"
+         android:layout_alignStart="@+id/start" />
+
+    <TextView android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/onStart"
+        android:layout_alignBottom="@+id/water"
+        android:layout_alignStart="@+id/resume" />
+
+    <TextView android:id="@+id/resume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/onResume"
+        android:layout_alignBaseline="@+id/humid"
+        android:layout_alignBottom="@+id/humid"
+        android:layout_alignStart="@+id/restart" />
+
+    <TextView android:id="@+id/restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/onRestart"
+        android:layout_below="@+id/humid"
+        android:layout_alignStart="@+id/bLaunchActivityTwo" />
+
+    <Button android:id="@+id/bLaunchActivityTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button android:id="@+id/sun"
+        android:layout_width="120px"
+        android:layout_height="120px"
+        android:background="@drawable/sun"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="69dp" />
+    <Button android:id="@+id/humid"
+        android:layout_width="120px"
+        android:layout_height="120px"
+        android:background="@drawable/humid"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_above="@+id/sun"
+        android:layout_alignParentEnd="true" />
+    <Button android:id="@+id/water"
+        android:layout_width="120px"
+        android:layout_height="120px"
+        android:background="@drawable/water"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_above="@+id/humid"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
