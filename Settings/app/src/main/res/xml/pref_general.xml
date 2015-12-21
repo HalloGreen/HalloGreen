@@ -1,0 +1,43 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="pref_general"
+    android:title="总设置">
+    <PreferenceCategory
+        android:title="总设置">
+    <SwitchPreference
+        android:key="data_show"
+        android:title="百分比数据显示"
+        android:summary="默认显示数值"
+        android:defaultValue="true" />
+    <SwitchPreference
+        android:key="dying_notice"
+        android:title="植物生存危机提醒"
+        android:summary="默认开启"
+        android:defaultValue="true" />
+    <SwitchPreference
+        android:key="water_supply_switch"
+        android:title="自动为植物浇水"
+        android:summary="默认开启"
+        android:defaultValue="true" />
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+    <EditTextPreference
+        android:key="water_supply"
+        android:title="N天无指令则自动浇水"
+        android:defaultValue="3"
+        android:selectAllOnFocus="true"
+        android:summary="默认3天，点击修改天数"
+        android:maxLines="1" />
+    </PreferenceCategory>
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+    <!-- <ListPreference
+        android:key="example_list"
+        android:title="@string/pref_title_add_friends_to_messages"
+        android:defaultValue="-1"
+        android:entries="@array/pref_example_list_titles"
+        android:entryValues="@array/pref_example_list_values"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null" /> -->
+
+</PreferenceScreen>

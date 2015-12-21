@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string-array name="plant_list">
+        <item>向日葵</item>
+        <item>小番茄</item>
+        <item>隔壁老王的含羞草</item>
+        <item>女盆友的满天星</item>
+    </string-array>
+</resources>
