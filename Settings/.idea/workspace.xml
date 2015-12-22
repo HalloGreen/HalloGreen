@@ -36,22 +36,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c1c11d0-deba-49e6-93b9-259799e48fb9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Settings.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../HalloGreen/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/values/plant_list.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/xml/pref_individual_plant.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../HalloGreen/.idea/workspace.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_23_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_23_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_23_1_1.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/outputFileStates.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/hallogreen/settings/SettingsActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/hallogreen/settings/SettingsActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Settings.iws" />
@@ -73,12 +62,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pref_notification.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/pref_notification.xml">
+      <file leaf-file-name="pref_general.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/pref_general.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.30690536">
-              <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SettingsActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/hallogreen/settings/SettingsActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.7">
+              <caret line="273" column="53" selection-start-line="273" selection-start-column="53" selection-end-line="273" selection-end-column="53" />
+              <folding>
+                <element signature="docComment;class#SettingsActivity#0" expanded="false" />
+                <element signature="docComment;method#setupActionBar#0;class#SettingsActivity#0" expanded="false" />
+                <element signature="docComment;method#onIsMultiPane#0;class#SettingsActivity#0" expanded="false" />
+                <element signature="docComment;method#isXLargeTablet#0;class#SettingsActivity#0" expanded="false" />
+                <element signature="method#isXLargeTablet#0;class#SettingsActivity#0" expanded="false" />
+                <element signature="docComment;method#onBuildHeaders#0;class#SettingsActivity#0" expanded="false" />
+                <element signature="e#2507#2516#0" expanded="false" />
+                <element signature="method#onBuildHeaders#0;class#SettingsActivity#0" expanded="false" />
+                <element signature="e#3180#3241#0" expanded="false" />
+                <element signature="e#3775#3837#0" expanded="false" />
+                <element signature="e#4480#4534#0" expanded="false" />
+                <element signature="e#4781#4841#0" expanded="false" />
+                <element signature="docComment;class#GeneralPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
+                <element signature="method#onOptionsItemSelected#0;class#GeneralPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
+                <element signature="docComment;class#NotificationPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
+                <element signature="method#onOptionsItemSelected#0;class#NotificationPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
+                <element signature="docComment;class#DataSyncPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1526,13 +1543,13 @@
       <list>
         <option value="$PROJECT_DIR$/app/src/main/res/xml/pref_individual_plant.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/plantlist.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/xml/pref_headers.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/hallogreen/settings/SettingsActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/xml/pref_general.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/xml/pref_data_sync.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/xml/pref_notification.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/xml/pref_headers.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/hallogreen/settings/SettingsActivity.java" />
       </list>
     </option>
   </component>
@@ -1578,8 +1595,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
@@ -1602,10 +1617,6 @@
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xml" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1619,6 +1630,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -1662,9 +1677,15 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manifests" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1672,7 +1693,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_4_API_15" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_4_API_23" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/QQUIDemo" />
     <property name="android.project.structure.last.selected" value="app" />
     <property name="android.project.structure.proportion" value="0.15" />
@@ -1879,27 +1900,34 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-4" width="1024" height="772" extended-state="7" />
-    <editor active="false" />
+    <frame x="0" y="-4" width="1024" height="772" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.80032206" sideWeight="0.49591002" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.49591002" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33977455" sideWeight="0.49182004" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7278583" sideWeight="0.50408995" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41867954" sideWeight="0.1605317" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924336" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14814815" sideWeight="0.48773006" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28629857" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32206118" sideWeight="0.49182004" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41867954" sideWeight="0.8394683" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.49591002" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6376812" sideWeight="0.45296523" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.49591002" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32206118" sideWeight="0.50817996" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32206118" sideWeight="0.50817996" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32924336" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28985506" sideWeight="0.6605317" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33435583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -1911,10 +1939,15 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28629857" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28985506" sideWeight="0.65541923" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1926,11 +1959,79 @@
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="7" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/pref_general.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/hallogreen/settings/SettingsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#SettingsActivity#0" expanded="false" />
+            <element signature="docComment;method#setupActionBar#0;class#SettingsActivity#0" expanded="false" />
+            <element signature="docComment;method#onIsMultiPane#0;class#SettingsActivity#0" expanded="false" />
+            <element signature="docComment;method#isXLargeTablet#0;class#SettingsActivity#0" expanded="false" />
+            <element signature="method#isXLargeTablet#0;class#SettingsActivity#0" expanded="false" />
+            <element signature="docComment;method#onBuildHeaders#0;class#SettingsActivity#0" expanded="false" />
+            <element signature="e#2507#2516#0" expanded="false" />
+            <element signature="method#onBuildHeaders#0;class#SettingsActivity#0" expanded="false" />
+            <element signature="e#3180#3241#0" expanded="false" />
+            <element signature="e#3775#3837#0" expanded="false" />
+            <element signature="e#4480#4534#0" expanded="false" />
+            <element signature="e#4781#4841#0" expanded="false" />
+            <element signature="docComment;class#GeneralPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#GeneralPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
+            <element signature="docComment;class#NotificationPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#NotificationPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
+            <element signature="docComment;class#DataSyncPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/pref_general.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/hallogreen/settings/SettingsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#SettingsActivity#0" expanded="false" />
+            <element signature="docComment;method#setupActionBar#0;class#SettingsActivity#0" expanded="false" />
+            <element signature="docComment;method#onIsMultiPane#0;class#SettingsActivity#0" expanded="false" />
+            <element signature="docComment;method#isXLargeTablet#0;class#SettingsActivity#0" expanded="false" />
+            <element signature="method#isXLargeTablet#0;class#SettingsActivity#0" expanded="false" />
+            <element signature="docComment;method#onBuildHeaders#0;class#SettingsActivity#0" expanded="false" />
+            <element signature="e#2507#2516#0" expanded="false" />
+            <element signature="method#onBuildHeaders#0;class#SettingsActivity#0" expanded="false" />
+            <element signature="e#3180#3241#0" expanded="false" />
+            <element signature="e#3775#3837#0" expanded="false" />
+            <element signature="e#4480#4534#0" expanded="false" />
+            <element signature="e#4781#4841#0" expanded="false" />
+            <element signature="docComment;class#GeneralPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#GeneralPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
+            <element signature="docComment;class#NotificationPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#NotificationPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
+            <element signature="docComment;class#DataSyncPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/pref_headers.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1943,7 +2044,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-          <folding />
+          <folding>
+            <element signature="docComment;class#AppCompatPreferenceActivity#0" expanded="false" />
+            <element signature="method#onPostCreate#0;class#AppCompatPreferenceActivity#0" expanded="false" />
+            <element signature="method#setSupportActionBar#0;class#AppCompatPreferenceActivity#0" expanded="false" />
+            <element signature="method#setContentView#0;class#AppCompatPreferenceActivity#0" expanded="false" />
+            <element signature="method#setContentView#2;class#AppCompatPreferenceActivity#0" expanded="false" />
+            <element signature="method#addContentView#0;class#AppCompatPreferenceActivity#0" expanded="false" />
+            <element signature="method#onPostResume#0;class#AppCompatPreferenceActivity#0" expanded="false" />
+            <element signature="method#onTitleChanged#0;class#AppCompatPreferenceActivity#0" expanded="false" />
+            <element signature="method#onConfigurationChanged#0;class#AppCompatPreferenceActivity#0" expanded="false" />
+            <element signature="method#onStop#0;class#AppCompatPreferenceActivity#0" expanded="false" />
+            <element signature="method#onDestroy#0;class#AppCompatPreferenceActivity#0" expanded="false" />
+            <element signature="method#getDelegate#0;class#AppCompatPreferenceActivity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1951,7 +2065,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
-          <folding />
+          <folding>
+            <element signature="docComment;class#SettingsActivity#0" expanded="false" />
+            <element signature="docComment;method#setupActionBar#0;class#SettingsActivity#0" expanded="false" />
+            <element signature="docComment;method#onIsMultiPane#0;class#SettingsActivity#0" expanded="false" />
+            <element signature="docComment;method#isXLargeTablet#0;class#SettingsActivity#0" expanded="false" />
+            <element signature="method#isXLargeTablet#0;class#SettingsActivity#0" expanded="false" />
+            <element signature="docComment;method#onBuildHeaders#0;class#SettingsActivity#0" expanded="false" />
+            <element signature="e#2507#2516#0" expanded="false" />
+            <element signature="method#onBuildHeaders#0;class#SettingsActivity#0" expanded="false" />
+            <element signature="e#3180#3241#0" expanded="false" />
+            <element signature="e#3775#3837#0" expanded="false" />
+            <element signature="e#4480#4534#0" expanded="false" />
+            <element signature="e#4781#4841#0" expanded="false" />
+            <element signature="docComment;class#GeneralPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#GeneralPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
+            <element signature="docComment;class#NotificationPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#NotificationPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
+            <element signature="docComment;class#DataSyncPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1987,7 +2119,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2044,7 +2175,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2086,7 +2216,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2094,42 +2223,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="297" column="16" selection-start-line="297" selection-start-column="16" selection-end-line="297" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/hallogreen/settings/SettingsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.5328467">
-          <caret line="262" column="56" selection-start-line="262" selection-start-column="56" selection-end-line="262" selection-end-column="56" />
-          <folding>
-            <element signature="docComment;class#SettingsActivity#0" expanded="false" />
-            <element signature="docComment;method#setupActionBar#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="docComment;method#onIsMultiPane#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="docComment;method#isXLargeTablet#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="method#isXLargeTablet#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="docComment;method#onBuildHeaders#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="e#2507#2516#0" expanded="false" />
-            <element signature="method#onBuildHeaders#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="e#3180#3241#0" expanded="false" />
-            <element signature="e#3775#3837#0" expanded="false" />
-            <element signature="e#4480#4534#0" expanded="false" />
-            <element signature="e#4781#4841#0" expanded="false" />
-            <element signature="docComment;method#isValidFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="docComment;class#GeneralPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="class#GeneralPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="method#onCreate#0;class#GeneralPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="e#7034#7100#0" expanded="false" />
-            <element signature="method#onOptionsItemSelected#0;class#GeneralPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="docComment;class#NotificationPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="class#NotificationPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="method#onCreate#0;class#NotificationPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="e#8309#8375#0" expanded="false" />
-            <element signature="method#onOptionsItemSelected#0;class#NotificationPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="docComment;class#DataSyncPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-            <element signature="e#9526#9592#0" expanded="false" />
-            <element signature="method#onCreate#0;class#IndividualPlantPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2137,14 +2230,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.43193716">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/pref_general.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3649635">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -2161,15 +2246,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5985401">
           <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/pref_headers.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5109489">
-          <caret line="14" column="74" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2182,15 +2258,55 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.04249292">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/pref_notification.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30690536">
+        <state vertical-scroll-proportion="0.1943734">
           <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/pref_general.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/pref_headers.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35532996">
+          <caret line="14" column="101" selection-start-line="14" selection-start-column="101" selection-end-line="14" selection-end-column="101" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/hallogreen/settings/SettingsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.7">
+          <caret line="273" column="53" selection-start-line="273" selection-start-column="53" selection-end-line="273" selection-end-column="53" />
+          <folding>
+            <element signature="docComment;class#SettingsActivity#0" expanded="false" />
+            <element signature="docComment;method#setupActionBar#0;class#SettingsActivity#0" expanded="false" />
+            <element signature="docComment;method#onIsMultiPane#0;class#SettingsActivity#0" expanded="false" />
+            <element signature="docComment;method#isXLargeTablet#0;class#SettingsActivity#0" expanded="false" />
+            <element signature="method#isXLargeTablet#0;class#SettingsActivity#0" expanded="false" />
+            <element signature="docComment;method#onBuildHeaders#0;class#SettingsActivity#0" expanded="false" />
+            <element signature="e#2507#2516#0" expanded="false" />
+            <element signature="method#onBuildHeaders#0;class#SettingsActivity#0" expanded="false" />
+            <element signature="e#3180#3241#0" expanded="false" />
+            <element signature="e#3775#3837#0" expanded="false" />
+            <element signature="e#4480#4534#0" expanded="false" />
+            <element signature="e#4781#4841#0" expanded="false" />
+            <element signature="docComment;class#GeneralPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#GeneralPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
+            <element signature="docComment;class#NotificationPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#NotificationPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
+            <element signature="docComment;class#DataSyncPreferenceFragment#0;class#SettingsActivity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

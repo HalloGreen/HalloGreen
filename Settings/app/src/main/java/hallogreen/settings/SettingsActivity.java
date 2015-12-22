@@ -160,6 +160,7 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
      */
     protected boolean isValidFragment(String fragmentName) {
         return PreferenceFragment.class.getName().equals(fragmentName)
+                || IndividualPlantPreferenceFragment.class.getName().equals(fragmentName)
                 || GeneralPreferenceFragment.class.getName().equals(fragmentName)
                 || DataSyncPreferenceFragment.class.getName().equals(fragmentName)
                 || NotificationPreferenceFragment.class.getName().equals(fragmentName);
@@ -176,13 +177,14 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
             super.onCreate(savedInstanceState);
             addPreferencesFromResource(R.xml.pref_general);
             setHasOptionsMenu(true);
+            System.out.println("Runing Genaral Settings!!!!");
 
             // Bind the summaries of EditText/List/Dialog/Ringtone preferences
             // to their values. When their values change, their summaries are
             // updated to reflect the new value, per the Android Design
             // guidelines.
-            bindPreferenceSummaryToValue(findPreference("example_text"));
-            bindPreferenceSummaryToValue(findPreference("example_list"));
+            //bindPreferenceSummaryToValue(findPreference("example_text"));
+            //bindPreferenceSummaryToValue(findPreference("example_list"));
         }
 
         @Override
@@ -212,7 +214,7 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
             // to their values. When their values change, their summaries are
             // updated to reflect the new value, per the Android Design
             // guidelines.
-            bindPreferenceSummaryToValue(findPreference("notifications_new_message_ringtone"));
+            //bindPreferenceSummaryToValue(findPreference("notifications_new_message_ringtone"));
         }
 
         @Override
@@ -242,7 +244,7 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
             // to their values. When their values change, their summaries are
             // updated to reflect the new value, per the Android Design
             // guidelines.
-            bindPreferenceSummaryToValue(findPreference("sync_frequency"));
+            //bindPreferenceSummaryToValue(findPreference("sync_frequency"));
         }
 
         @Override
@@ -256,6 +258,7 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
         }
     }
 
+    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     public static class IndividualPlantPreferenceFragment extends PreferenceFragment{
         //获取植物列表
         public static String[] plant_list;
@@ -275,76 +278,76 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
                 //health standards for editText settings
                 EditTextPreference health_standard_water_sup = new EditTextPreference(screen.getContext());
                 health_standard_water_sup.setTitle("植物生长健康时，湿度不高于（百分比）");
-                health_standard_water_sup.setDefaultValue(90);
+                health_standard_water_sup.setDefaultValue("90");
                 health_standard_water_sup.setSummary("summary");//??
                 health_standard_water_sup.setKey(current_plant + "_health_" + "water_sup");
 
                 EditTextPreference health_standard_water_inf = new EditTextPreference(screen.getContext());
                 health_standard_water_inf.setTitle("植物生长健康时，湿度不低于（百分比）");
-                health_standard_water_inf.setDefaultValue(10);
+                health_standard_water_inf.setDefaultValue("10");
                 health_standard_water_inf.setSummary("summary");//??
                 health_standard_water_inf.setKey(current_plant + "_health_" + "water_inf");
 
                 EditTextPreference health_standard_temperature_sup = new EditTextPreference(screen.getContext());
                 health_standard_temperature_sup.setTitle("植物生长健康时，温度不高于（摄氏度）");
-                health_standard_temperature_sup.setDefaultValue(50);
+                health_standard_temperature_sup.setDefaultValue("50");
                 health_standard_temperature_sup.setSummary("summary");//??
                 health_standard_temperature_sup.setKey(current_plant + "_health_" + "temperature_sup");
 
                 EditTextPreference health_standard_temperature_inf = new EditTextPreference(screen.getContext());
                 health_standard_temperature_inf.setTitle("植物生长健康时，温度不低于（摄氏度）");
-                health_standard_temperature_inf.setDefaultValue(-10);
+                health_standard_temperature_inf.setDefaultValue("-10");
                 health_standard_temperature_inf.setSummary("summary");//??
                 health_standard_temperature_inf.setKey(current_plant + "_health_" + "temperature_inf");
 
 
                 EditTextPreference health_standard_sunshine_sup = new EditTextPreference(screen.getContext());
                 health_standard_sunshine_sup.setTitle("植物生长健康时，光照不高于（百分比）");
-                health_standard_sunshine_sup.setDefaultValue(80);
+                health_standard_sunshine_sup.setDefaultValue("80");
                 health_standard_sunshine_sup.setSummary("summary");//??
                 health_standard_sunshine_sup.setKey(current_plant + "_health_" + "sunshine_sup");
 
                 EditTextPreference health_standard_sunshine_inf = new EditTextPreference(screen.getContext());
                 health_standard_sunshine_inf.setTitle("植物生长健康时，光照不低于（百分比）");
-                health_standard_sunshine_inf.setDefaultValue(10);
+                health_standard_sunshine_inf.setDefaultValue("10");
                 health_standard_sunshine_inf.setSummary("summary");//??
                 health_standard_sunshine_inf.setKey(current_plant + "_health_" + "sunshine_inf");
 
                 //dying standards editext settings
                 EditTextPreference dying_standard_water_sup = new EditTextPreference(screen.getContext());
                 dying_standard_water_sup.setTitle("植物濒临灭绝，湿度超过（百分比）");
-                dying_standard_water_sup.setDefaultValue(90);
+                dying_standard_water_sup.setDefaultValue("90");
                 dying_standard_water_sup.setSummary("summary");//??
                 dying_standard_water_sup.setKey(current_plant + "_dying_" + "water_sup");
 
                 EditTextPreference dying_standard_water_inf = new EditTextPreference(screen.getContext());
                 dying_standard_water_inf.setTitle("植物濒临灭绝，湿度低于（百分比）");
-                dying_standard_water_inf.setDefaultValue(10);
+                dying_standard_water_inf.setDefaultValue("10");
                 dying_standard_water_inf.setSummary("summary");//??
                 dying_standard_water_inf.setKey(current_plant + "_dying_" + "water_inf");
 
                 EditTextPreference dying_standard_temperature_sup = new EditTextPreference(screen.getContext());
                 dying_standard_temperature_sup.setTitle("植物濒临灭绝，温度超过（摄氏度）");
-                dying_standard_temperature_sup.setDefaultValue(50);
+                dying_standard_temperature_sup.setDefaultValue("50");
                 dying_standard_temperature_sup.setSummary("summary");//??
                 dying_standard_temperature_sup.setKey(current_plant + "_dying_" + "temperature_sup");
 
                 EditTextPreference dying_standard_temperature_inf = new EditTextPreference(screen.getContext());
                 dying_standard_temperature_inf.setTitle("植物濒临灭绝，温度低于（摄氏度）");
-                dying_standard_temperature_inf.setDefaultValue(-10);
+                dying_standard_temperature_inf.setDefaultValue("-10");
                 dying_standard_temperature_inf.setSummary("summary");//??
                 dying_standard_temperature_inf.setKey(current_plant + "_dying_" + "temperature_inf");
 
 
                 EditTextPreference dying_standard_sunshine_sup = new EditTextPreference(screen.getContext());
                 dying_standard_sunshine_sup.setTitle("植物濒临灭绝，光照超过（百分比）");
-                dying_standard_sunshine_sup.setDefaultValue(80);
+                dying_standard_sunshine_sup.setDefaultValue("80");
                 dying_standard_sunshine_sup.setSummary("summary");//??
                 dying_standard_sunshine_sup.setKey(current_plant + "_dying_" + "sunshine_sup");
 
                 EditTextPreference dying_standard_sunshine_inf = new EditTextPreference(screen.getContext());
                 dying_standard_sunshine_inf.setTitle("植物濒临灭绝，光照低于（百分比）");
-                dying_standard_sunshine_inf.setDefaultValue(10);
+                dying_standard_sunshine_inf.setDefaultValue("10" );
                 dying_standard_sunshine_inf.setSummary("summary");//??
                 dying_standard_sunshine_inf.setKey(current_plant + "_dying_" + "sunshine_inf");
 
