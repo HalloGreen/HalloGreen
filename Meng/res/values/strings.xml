@@ -12,4 +12,5 @@
     <string name="title_activity_sun">Sun</string>
     <string name="title_activity_water">Water</string>
 	<string name="title_activity_humid">humid</string>
+    <string name="name"> My name is :</string>
 </resources>

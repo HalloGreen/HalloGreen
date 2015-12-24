@@ -18,13 +18,11 @@ import java.lang.Override;
 public class MainActivity extends Activity {
 
     // Use these as keys when you're saving state between reconfigurations
-    private static final String RESTART_KEY = "restart";
-    private static final String RESUME_KEY = "resume";
-    private static final String START_KEY = "start";
-    private static final String CREATE_KEY = "create";
-
     // String for LogCat documentation
     private final static String TAG = "Lab-ActivityOne";
+
+    //public int bullshit = (int)WholeData.getState(1);
+
 
     // Lifecycle counters
 
@@ -36,12 +34,12 @@ public class MainActivity extends Activity {
 
     // You will need to increment these variables' values when their
     // corresponding lifecycle methods get called.
-    private int mCreate, mRestart, mStart, mResume = 0;
 
     // TODO: Create variables for each of the TextViews
     // named mTvCreate, mTvRestart, mTvStart, mTvResume.
     // for displaying the current count of each counter variable
-    private TextView mTvCreate, mTvRestart, mTvStart, mTvResume;
+
+    private TextView m_name;
 
     private RelativeLayout mLayout;
     @Override
@@ -52,22 +50,22 @@ public class MainActivity extends Activity {
         mLayout = (RelativeLayout) findViewById(R.id.my_layout);
         Resources res = this.getResources();
         Drawable drawable;
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+       final  WholeData data = new WholeData();
+        int bullshit = WholeData.getState(1);
+        if (bullshit == 2) {
             drawable = res.getDrawable(R.drawable.green, getTheme());
             mLayout.setBackground(drawable);
-        } else {
-            drawable = res.getDrawable(R.drawable.pink);
-            mLayout.setBackgroundDrawable(drawable);
+        } else  {
+            drawable = res.getDrawable(R.drawable.pink, getTheme());
+            mLayout.setBackground(drawable);
         }
+        m_name = (TextView) findViewById(R.id.name);
+        m_name.append((String)data.getHashMap().get("plant1_pname"));
+       // <!--android:id="@+id/my_layout"-->
        // mCreate++;
         // TODO: Assign the appropriate TextViews to the TextView variables
         // Hint: Access the TextView by calling Activity's findViewById()
         // textView1 = (TextView) findViewById(R.id.textView1);
-        mTvCreate = (TextView)	findViewById(R.id.create);
-        mTvRestart = (TextView) findViewById(R.id.restart);
-        mTvStart = (TextView) findViewById(R.id.start);
-        mTvResume = (TextView) findViewById(R.id.resume);
-        //mTvCreate.append("()" + " " + "calls" + ":" + " "+ Integer.toString(mCreate));
 
         Button launchActivityTwoButton = (Button) findViewById(R.id.bLaunchActivityTwo);
         launchActivityTwoButton.setOnClickListener(new OnClickListener() {
@@ -91,9 +89,10 @@ public class MainActivity extends Activity {
         launchSunActivityButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                data.getHashMap().put("feed", true);
                 Intent sunActivity = new Intent("com.example.hsienyu.lab2.sunActivity");
                 startActivity(sunActivity);
+                System.out.println("onClick:" + Boolean.toString((Boolean)data.getHashMap().get("feed")));
             }
         });
 
@@ -122,20 +121,15 @@ public class MainActivity extends Activity {
             // TODO:
             // Restore value of counters from saved state
             // Only need 4 lines of code, one for every count variable
-            savedInstanceState.getInt(CREATE_KEY);
-            savedInstanceState.getInt(RESTART_KEY);
-            savedInstanceState.getInt(START_KEY);
-            savedInstanceState.getInt(RESUME_KEY);
         }
 
         // Emit LogCat message
-        Log.i(TAG, "Entered the onCreate() method" + mCreate);
+        Log.i(TAG, "Entered the onCreate() method");
 
         // TODO:
         // Update the appropriate count variable
         // Update the user interface via the displayCounts() method
-        mCreate++;
-        displayCounts();
+
     }
 
     // Lifecycle callback overrides
@@ -145,13 +139,12 @@ public class MainActivity extends Activity {
         super.onStart();
 
         // Emit LogCat message
-        Log.i(TAG, "Entered the onStart() method" + mStart);
+        Log.i(TAG, "Entered the onStart() method");
 
         // TODO:
         // Update the appropriate count variable
         // Update the user interface
-        mStart++;
-        displayCounts();
+
     }
 
     @Override
@@ -159,13 +152,12 @@ public class MainActivity extends Activity {
         super.onResume();
 
         // Emit LogCat message
-        Log.i(TAG, "Entered the onResume() method" + mResume);
+        Log.i(TAG, "Entered the onResume() method" );
 
         // TODO:
         // Update the appropriate count variable
         // Update the user interface
-        mResume++;
-        displayCounts();
+
     }
 
     @Override
@@ -173,7 +165,7 @@ public class MainActivity extends Activity {
         super.onPause();
 
         // Emit LogCat message
-        Log.i(TAG, "Entered the onPause() method" + mStart);
+        Log.i(TAG, "Entered the onPause() method");
     }
 
     @Override
@@ -181,7 +173,7 @@ public class MainActivity extends Activity {
         super.onStop();
 
         // Emit LogCat message
-        Log.i(TAG, "Entered the onStop() method" + mStart);
+        Log.i(TAG, "Entered the onStop() method" );
 
     }
 
@@ -190,13 +182,12 @@ public class MainActivity extends Activity {
         super.onRestart();
 
         // Emit LogCat message
-        Log.i(TAG, "Entered the onRestart() method" + mResume);
+        Log.i(TAG, "Entered the onRestart() method");
 
         // TODO:
         // Update the appropriate count variable
         // Update the user interface
-        mResume++;
-        displayCounts();
+
     }
 
     @Override
@@ -212,24 +203,12 @@ public class MainActivity extends Activity {
         // TODO:
         // Save state information with a collection of key-value pairs
         // 4 lines of code, one for every count variable
-        savedInstanceState.putInt(CREATE_KEY, mCreate);
-        savedInstanceState.putInt(RESTART_KEY, mRestart);
-        savedInstanceState.putInt(START_KEY, mStart);
-        savedInstanceState.putInt(RESUME_KEY, mResume);
+
     }
 
     // Updates the displayed counters
     // This method expects that the counters and TextView variables use the
     // names
     // specified above
-    public void displayCounts() {
 
-        // TODO - uncomment these lines
-
-		mTvCreate.setText(String.format("onCreate() calls: %d", mCreate));
-		mTvStart.setText(String.format("onStart() calls: %d", mStart));
-		mTvResume.setText(String.format("onResume() calls: %d", mResume));
-		mTvRestart.setText(String.format("onRestart() calls: %d", mRestart));
-
-    }
 }

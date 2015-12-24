@@ -50,6 +50,11 @@
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
+        <activity android:name="com.example.hsienyu.lab2.WholeData">
+
+        </activity>
+
+
 
 
     </application>
